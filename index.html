@@ -4,7 +4,15 @@
 </header>
 
 <body>
-    Hello World from CTOS.ai team
+    <h4>Hello World from CTOS.ai team</h4>
+    <p id=p1> </p>
+
+    <script>
+        let today = new Date()
+        let startDate = new Date("2021-04-05")
+        let datediff = Math.round((today - startDate) / (1000 * 60 * 60 * 24));
+        document.getElementById("p1").innerHTML = `Numbers of days since we started this project: ` + datediff
+    </script>
 </body>
 
 </html>
